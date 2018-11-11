@@ -17,7 +17,6 @@ abstract class Repository implements RepositoryInterface
     {
         $this->app = $app;
         $this->makeModel();
-        $this->init();
     }
 
     /**
@@ -25,12 +24,6 @@ abstract class Repository implements RepositoryInterface
      */
     abstract public function model(): string;
 
-    /**
-     * Init repository.
-     */
-    protected function init()
-    {
-    }
 
     /**
      * Inits model
