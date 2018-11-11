@@ -19,7 +19,4 @@ Import massive excel sheet  (Laravel , Queues , jobs, events).
 
 8:use api "http://127.0.0.1:8000/api/import-patients"  with post method to import excel file
 
-9: curl --request POST \
-  --url http://127.0.0.1:8000/api/import-patients \
-  --header 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
-  --form patientFile=undefined
+9: run curl -X POST -F 'patientFile=@/path/to/file' http://127.0.0.1:8000/api/import-patients
